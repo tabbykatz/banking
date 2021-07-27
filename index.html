@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>Bank of Tabitha</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+<body>
+
+<!-- navbar for the top of the site -->
+<div class="navbar">
+  <div class="navbar" id="navbar_id">
+    <a href="#home" class="logo">BANK OF TABITHA</a>
+    <div class="nav_links">
+      <a href="#create" class="nav_item"><i class="fas fa-handshake"></i> create</a>
+      <a href="#accounts" class="nav_item"><i class="fas fa-money-bill-wave"></i> accounts</a>
+      <a href="#transact" class="nav_item"><i class="fas fa-cash-register"></i> transact</a>
+  </div>
+  </div>
+  </div>
+
+<!-- header with image -->
+<header class="header_no_img" id="home">
+  <div class="header_text">
+    <span class="taglines">You can totally trust us</span><br>
+    <span class="taglines">With your money</span><br>
+    <span class="taglines">With your life</span>
+
+  </div>
+</header>
+<container id="big_container">
+<!-- create section -->
+<container id="create">
+  <h5 class="title">CREATE AN ACCOUNT</h5>
+  <p class="privacy">Super easy, super secure.</p>
+    <p id="create_account_msg"><i class="fas fa-comments-dollar"></i></p>
+
+    <br>
+    <form>
+      <input id="new_account_name" class="inputs" type="text" placeholder="Account Name" required name="name" onsubmit=event.preventDefault()>
+
+
+        <button class="create_button" id="create_button" type="submit" value="" onclick="event.preventDefault()">
+          <i class="fas fa-plus-square"></i> CREATE ACCOUNT
+        </button>
+
+    </form>
+  </container>
+
+
+
+<!-- transaction section -->
+<container id="transact">
+  <h5 class="title">TRANSACTIONS</h5>
+  <p class="privacy">Yep right here on this public web page</p>
+    <p id="transact_account_msg"><i class="fas fa-comments-dollar"></i></p>
+
+
+
+<div class="formDiv">
+
+  <label>Transaction type:</label>
+  <select class="browser-default" id="formTransact">
+    <option value="" disabled selected>Choose your option</option>
+    <option value="balance">Balance</option>
+    <option value="deposit">Deposit</option>
+    <option value="withdraw">Withdraw</option>
+    <option value="transfer">Transfer</option>
+  </select>
+
+
+
+      <form>
+      <input id="formAccount" class="input-field" type="text" placeholder="Account" required name="Account" onsubmit=event.preventDefault()>
+
+      <!-- <p><input id="formTransact" class="inputs" type="" placeholder="Transaction Type" required name="Type" onsubmit=event.preventDefault()></p> -->
+      <input id="formOther" class="input-field" type="text" placeholder="Other Account" optional name="Other" onsubmit=event.preventDefault()>
+      <input id="formAmount" class="input-field" type="text" placeholder="Amount" optional name="Monetary Amount" onsubmit=event.preventDefault()>
+
+        <button id="transact_button" class="buttons" type="submit" value="" onclick=event.preventDefault()>
+          <i class="fas fa-plus-square"></i> POST TRANSACTION
+        </button>
+
+    </form></div>
+</container>
+
+ <!-- accounts Section -->
+ <container id="accounts">
+  <h5 class="title">OUR ACCOUNTS</h5>
+  <p class="privacy">We value your privacy</p>
+  <p class="description">We have the following open accounts:</p>
+    <div class="display">
+      <ul id="display_ul"></ul>
+    </div>
+</container>
+</container>
+<!-- Footer -->
+<footer class="footer">
+  <a href="#home" class="links"><i class="fas fa-arrow-up bank-margin-right"></i> Return to the top</a>
+  <p>Made with humour by<a href="https://www.tabbykatz.com" title="portfolio" target="_blank" class="links"> Tabitha</a></p>
+</footer>
+<script src=script.js></script>
+</body>
+</html>

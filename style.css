@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Open+Sans&display=swap');
+
+body {
+  padding: 7%;
+  color: #000;
+  font-family: 'Courier Prime', Courier, monospace;
+}
+
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Courier Prime', Courier, monospace;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #333;
+}
+
+.links {
+  color: #2a6849;
+}
+
+.nav_item {
+  color: #2a6849;
+}
+.taglines {
+  color: #333;
+  font-size: 1.75rem;
+}
+
+
+.logo {
+  color: #000;
+  font-size: 3rem;
+}
+
+.navbar {
+  padding: 0;
+  color: #000;
+  background-color: #fff; /*color behind nav */
+  font-size: 2rem;
+}
+
+#navbar_id {
+  padding: 0
+}
+/* Image header */
+.header_text {
+  background-color: transparent;
+}
+
+.header_no_img {
+  display: flex;
+  height: 200px;
+  align-items: center;
+}
+
+#accounts {
+  padding-left: 20px;
+}
+
+#create {
+  padding: 20px;
+}
+
+#transact {
+  padding: 20px;
+}
+
